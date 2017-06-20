@@ -1,0 +1,6 @@
+#!/bin/bash
+
+argc=$#
+svn_id=$((argc-1))
+local_id=$argc
+eval vimdiff \$$svn_id \$$local_id
